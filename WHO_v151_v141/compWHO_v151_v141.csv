@@ -1,0 +1,566 @@
+"Name -- 2016v1_5","Diff Name -- 2016v1_4","Sequence Number -- 2016v1_5","Sequence Number -- 2016v1_4","Label -- 2016v1_5","Diff Label -- 2016v1_4","Type -- 2016v1_5","Diff Type -- 2016v1_4","Choice Name -- 2016v1_5","Diff Choice Name -- 2016v1_4","Choice Labels -- 2016v1_5","Diff Choice Labels -- 2016v1_4"
+"presets",,"1",,"Preset HIV-Malaria mortality and season.","preset HIV-MALARIA PREVALENCE AND SEASON","begin group",,,,,
+"id10002",,"2",,"Is this a region of high HIV/AIDS mortality?","is this a region of high hiv/aids PREVALENCE?","select_one HIGH_LOW_VERY",,"high_low_very","SELECT_ONE HIGH_low_very","high; low; very low","[empty cell]"
+"id10003",,"3",,"Is this a region of high malaria mortality?","is this a region of high malaria PREVALENCE?","select_one HIGH_LOW_VERY",,"high_low_very","SELECT_ONE HIGH_low_very","high; low; very low","[empty cell]"
+"id10004",,"4",,"During which season did (s)he die?",,"select_one select_58",,"select_58","select_ONE SELECT_58","wet; dry; doesn't know","[empty cell]"
+"respondent_backgr",,"5",,"Information on the respondent and background about interview",,"begin group",,,,,
+"id10007",,"6",,"What is the name of VA respondent?",,"text",,,,,
+"id10008",,"7",,"What is your/the respondent's relationship to the deceased?","what is the respondent's relationship to the deceased?","select_one select_32",,"select_32","select_ONE SELECT_32","parent; child; other family member; friend; health worker; public official; another relationship; refused to answer","[empty cell]"
+"id10009",,"8",,"Did you/the respondent live with the deceased in the period leading to her/his death?","did the respondent live with the deceased in the period leading to her/his death?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10010",,"9",,"Name of VA interviewer",,"text",,,,,
+"id10012",,"10","11","","DATE OF INTERVIEW","today","DATE","[empty cell]",,,
+"id10013",,"11","12","Did the respondent give consent?",,"select_one YES_NO",,"yes_no","SELECT_ONE YES_no","yes; no","[empty cell]"
+"id10011",,"12","10","[empty cell]","TIME AT START OF INTERVIEW","start","TIME",,,,
+"consented",,"13",,"Skip to end if not consented",,"begin group",,,,,
+"deceased_crvs",,"14",,"Information about the deceased and vital registration",,"begin group",,,,,
+"info_on_deceased",,"15",,"Information on the Deceased",,"begin group",,,,,
+"id10017",,"16",,"What was the first or given name(s) of the deceased?",,"text",,,,,
+"id10018",,"17",,"What was the surname (or family name)  of the deceased?","what was the surname (or family NAME)' of the deceased?","text",,,,,
+"id10019",,"18",,"What was the sex of the deceased?",,"select_one select_2",,"select_2","select_ONE SELECT_2","female; male; ambiguous/intersex","[empty cell]"
+"id10020",,"19",,"Is the date of birth known?",,"select_one YES_NO_REF",,"yes_no_ref","SELECT_ONE YES_no_ref","yes; no; refused to answer","[empty cell]"
+"id10021",,"20",,"When was the deceased born?",,"date",,,,,
+"id10022",,"21",,"Is the date of death known?",,"select_one YES_NO_REF",,"yes_no_ref","SELECT_ONE YES_no_ref","yes; no; refused to answer","[empty cell]"
+"id10023_a","[no match found]","22","","When did (s)he die?","[no match found]","date","[no match found]",,"[no match found]",,"[no match found]"
+"id10023_b","[no match found]","23","","When did (s)he die?","[no match found]","date","[no match found]",,"[no match found]",,"[no match found]"
+"id10023",,"24","22","When did (s)he die?",,"calculate","DATE",,,,
+"id10024",,"25","23","Please indicate the year of death.",,"date","INTEGER",,,,
+"ageindays",,"26","24","[empty cell]",,"calculate",,,,,
+"ageinyears",,"27","25","[empty cell]",,"calculate",,,,,
+"ageinyearsremain",,"28","26","[empty cell]",,"calculate",,,,,
+"ageinmonths",,"29","27","[empty cell]",,"calculate",,,,,
+"ageinmonthsremain",,"30","28","[empty cell]",,"calculate",,,,,
+"isneonatal1",,"31","29","[empty cell]",,"calculate",,,,,
+"ischild1",,"32","30","[empty cell]",,"calculate",,,,,
+"isadult1",,"33","31","[empty cell]",,"calculate",,,,,
+"displayageneonate",,"34","32","NEONATE was ${ageInDays} days old.",,"note",,,,,
+"displayagechild",,"35","33","CHILD was ${ageInYears} years ${ageInMonths} months and ${ageInMonthsRemain} days old.",,"note",,,,,
+"displayageadult",,"36","34","ADULT was ${ageInYears} years old.",,"note",,,,,
+"age_group",,"37","35","What age group corresponds to the deceased?",,"select_one age_group",,"age_group","SELECT_ONE AGE_group","neonate; child; adult","[empty cell]"
+"age_neonate_days",,"38","36","How many days old was the baby? Enter neonate's age in days:","enter neonate's age in days:","integer",,,,,
+"age_child_unit",,"39",,"How old was the child? Enter child's age in:","enter child's age in:","select_one units",,"units","SELECT_ONE UNITS","days; months; years; doesn't know; refused to answer","[empty cell]"
+"age_child_days",,"40",,"Enter child's age in days:",,"integer",,,,,
+"age_child_months",,"41",,"Enter child's age in months:",,"integer",,,,,
+"age_child_years",,"42",,"Enter child's age in years:",,"integer",,,,,
+"age_adult",,"43",,"Enter adult's age in years:",,"integer",,,,,
+"ageinmonthsbyyear","[no match found]","44","","[empty cell]","[no match found]","calculate","[no match found]",,"[no match found]",,"[no match found]"
+"ageinyears2","[no match found]","45","","[empty cell]","[no match found]","calculate","[no match found]",,"[no match found]",,"[no match found]"
+"isneonatal2",,"46","44","[empty cell]",,"calculate",,,,,
+"ischild2",,"47","45","[empty cell]",,"calculate",,,,,
+"isadult2",,"48","46","[empty cell]",,"calculate",,,,,
+"isneonatal",,"49","47","[empty cell]",,"calculate",,,,,
+"ischild",,"50","48","[empty cell]",,"calculate",,,,,
+"isadult",,"51","49","[empty cell]",,"calculate",,,,,
+"ageindaysneonate","[no match found]","52","","[empty cell]","[no match found]","calculate","[no match found]",,"[no match found]",,"[no match found]"
+"id10008_check","[no match found]","53","","It is not possible to select that the respondent is the child of the deceased and enter that the deceased is a neonate or child. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10058",,"54","50","Where did the deceased die?",,"select_one select_18",,"select_18","select_ONE SELECT_18","hospital; other health facility; home; on route to hospital or facility; other; doesn't know; refused to answer","[empty cell]"
+"id10051",,"55","51","Is there a need to collect additional demographic data on the deceased?","is there a need to collect CIVIL REGISTRATION data on the deceased?","select_one YES_NO",,"yes_no","SELECT_ONE YES_no","yes; no","[empty cell]"
+"id10052",,"56","52","What was her/his citizenship/nationality?",,"select_one select_500",,"select_500","select_ONE SELECT_500","citizen at birth; naturalized citizen; foreign national; doesn't know; refused to answer","[empty cell]"
+"id10053",,"57","53","What was her/his ethnicity?",,"text",,,,,
+"id10054",,"58","54","What was her/his place of birth?",,"text",,,,,
+"id10055",,"59","55","What was her/his place of usual residence? (the place where the person lived most of the year)",,"text",,,,,
+"id10057",,"60","57","Where did the death occur? (specify country, province, district, village)","where did death occur? (specify country, province, district, village)","text",,,,,
+"id10059",,"61","58","What was her/his marital status?",,"select_one select_19",,"select_19","select_ONE SELECT_19","single; married; life partner; divorced; widowed; too young to be married; doesn't know; refused to answer","[empty cell]"
+"id10060_check","[no match found]","62","","Is the date of marriage available?","[no match found]","select_one YES_NO","[no match found]","yes_no","[no match found]","yes; no","[no match found]"
+"id10060",,"63","59","What was the date of marriage?",,"date",,,,,
+"id10061",,"64","60","What was the name of the father?",,"text",,,,,
+"id10062",,"65","61","What was the name of the mother?",,"text",,,,,
+"id10063",,"66","62","What was her/his highest level of schooling?",,"select_one select_23",,"select_23","select_ONE SELECT_23","no formal education; primary school; secondary school; higher than secondary school; doesn't know; refused to answer","[empty cell]"
+"id10064",,"67","63","Was (s)he able to read and/or write?","was (s)he able to read AND write?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10065",,"68","64","What was her/his economic activity status in year prior to death?",,"select_one select_25",,"select_25","select_ONE SELECT_25","mainly unemployed; mainly employed; home-maker; pensioner; student; other; doesn't know; refused to answer","[empty cell]"
+"id10066",,"69","65","What was her/his occupation, that is, what kind of work did (s)he mainly do?",,"text",,,,,
+"vital_reg_certif",,"70","66","Civil registration numbers",,"begin group",,,,,
+"id10069",,"71","67","Is there a need to collect civil registration numbers on the deceased?",,"select_one YES_NO",,"yes_no","SELECT_ONE YES_no","yes; no","[empty cell]"
+"id10069_a","[no match found]","72","","Do you have a death registration certificate?","[no match found]","select_one YES_NO","[no match found]","yes_no","[no match found]","yes; no","[no match found]"
+"id10070",,"73","68","Death registration number/certificate",,"text",,,,,
+"id10071_check","[no match found]","74","","Is the date of registration available?","[no match found]","select_one YES_NO","[no match found]","yes_no","[no match found]","yes; no","[no match found]"
+"id10071",,"75","69","Date of registration",,"date",,,,,
+"id10072",,"76","70","Place of registration",,"text",,,,,
+"id10073",,"77","71","National identification number of deceased",,"text",,,,,
+"stillbirth",,"78","97","Verification of possible stillbirth",,"begin group",,,,,
+"id10104",,"79","98","Did the baby ever cry?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10105",,"80","99","Did the baby cry immediately after birth, even if only a little bit?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10106",,"81","100","How many minutes after birth did the baby first cry?","how many minutes after birth did the baby first cry? (USE 999 FOR NEVER)","integer",,,,,
+"id10107",,"82","101","Did the baby stop being able to cry?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10108",,"83","102","How many hours before death did the baby stop crying?",,"integer",,,,,
+"id10109",,"84","103","Did the baby ever move?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10110",,"85","104","Did the baby ever breathe?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10111",,"86","105","Did the baby breathe immediately after birth, even a little?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10112",,"87","106","Did the baby have a breathing problem?","did the baby have a BREATING problem?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10113",,"88","107","Was the baby given assistance to breathe at birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10114",,"89","108","If the baby didn't show any sign of life, was it born dead?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10115",,"90","109","Were there any bruises or signs of injury on baby's body after the birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10116",,"91","110","Was the baby’s body soft, pulpy and discoloured and the skin peeling away?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"injuries_accidents",,"92","72","History of injuries/accidents",,"begin group",,,,,
+"id10077",,"93","73","Did (s)he suffer from any injury or accident that led to her/his death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"injuries_accidents_yes",,"94","74","Injuries and accidents detail",,"begin group",,,,,
+"id10079",,"95","75","Was it a road traffic accident?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10080",,"96","76","What was her/his role in the road traffic accident?",,"select_one select_292",,"select_292","select_ONE SELECT_292","pedestrian; driver or passenger in car or light vehicle; driver or passenger in bus or heavy vehicle; driver or passenger on a motorcycle; driver or passenger on a pedal cycle; other; doesn't know; refused to answer","[empty cell]"
+"id10081",,"97","77","What was the counterpart that was hit during the road traffic accident?",,"select_one select_293",,"select_293","select_ONE SELECT_293","pedestrian; stationary object; car or light vehicle; bus or heavy vehicle; motorcycle; pedal cycle; other; doesn't know; refused to answer","[empty cell]"
+"id10082",,"98","78","Was (s)he injured in a non-road transport accident?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10083",,"99","79","Was (s)he injured in a fall?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10084",,"100","80","Was there any poisoning?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10085",,"101","81","Did (s)he die of drowning?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10086",,"102","82","Was (s)he injured by a bite or sting by venomous animal?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10087",,"103","83","Was (s)he injured by an animal or insect (non-venomous)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10088",,"104","84","What was the animal/insect?",,"select_one select_299",,"select_299","select_ONE SELECT_299","dog; snake; insect or scorpion; other; doesn't know; refused to answer","[empty cell]"
+"id10089",,"105","85","Was (s)he injured by burns/fire?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10090",,"106","86","Was (s)he subject to violence (suicide, homicide, abuse)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10091",,"107","87","Was (s)he injured by a firearm?","was (s)he injured by a FIRE ARM?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10092",,"108","88","Was (s)he stabbed, cut or pierced?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10093",,"109","89","Was (s)he strangled?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10094",,"110","90","Was (s)he injured by a blunt force?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10095",,"111","91","Was (s)he injured by a force of nature?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10096",,"112","92","Was it electrocution?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10097",,"113","93","Did (s)he encounter any other injury?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10098",,"114","94","Was the injury accidental?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10099",,"115","95","Was the injury self-inflicted?","was the injury OR ACCIDENT self-inflicted?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10100",,"116","96","Was the injury intentionally inflicted by someone else?","was the injury OR ACCIDENT intentionally inflicted by someone else?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"illhistory",,"117","111","Health history",,"begin group",,,,,
+"id10351",,"118","112","How many days old was the baby when the fatal illness started?","how old was the baby when the fatal illness started?","integer",,,,,
+"id10408",,"119","113","Before the illness that led to death, was the baby/the child growing normally?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"illdur",,"120","114","Duration of illness",,"begin group",,,,,
+"id10120_0","[no match found]","121","","For how many days was (s)he ill before death?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10120_unit","[no match found]","122","","For how long was (s)he ill before death?","[no match found]","select_one units_1","[no match found]","units_1","[no match found]","days; months; years; doesn't know; refused to answer","[no match found]"
+"id10121",,"123","118","Months",,"integer",,,,,
+"id10122",,"124","117","Years","WEEKS","integer",,,,,
+"id10120_1","[no match found]","125","","Days","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10120",,"126","116","Calculated number of Days with illness","days","calculate","INTEGER",,,,
+"id10123",,"127","119","Did (s)he die suddenly?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"med_hist_final_illness",,"128","120","Medical history associated with final illness",,"begin group",,,,,
+"id10125",,"129","121","Was there any diagnosis by a health professional of tuberculosis?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10126",,"130","122","Was an HIV test ever positive?","was THE hiv test ever positive?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10127",,"131","123","Was there any diagnosis by a health professional of AIDS?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10128",,"132","124","Did (s)he have a recent positive test by a health professional for malaria?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10129",,"133","125","Did (s)he have a recent negative test by a health professional for malaria?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10130",,"134","126","Was there any diagnosis by a health professional of dengue fever?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10131",,"135","127","Was there any diagnosis by a health professional of measles?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10132",,"136","128","Was there any diagnosis by a health professional of high blood pressure?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10133",,"137","129","Was there any diagnosis by a health professional of heart disease?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10134",,"138","130","Was there any diagnosis by a health professional of diabetes?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10135",,"139","131","Was there any diagnosis by a health professional of asthma?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10136",,"140","132","Was there any diagnosis by a health professional of epilepsy?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10137",,"141","133","Was there any diagnosis by a health professional of cancer?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10138",,"142","134","Was there any diagnosis by a health professional of Chronic Obstructive Pulmonary Disease (COPD)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10139",,"143","135","Was there any diagnosis by a health professional of dementia?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10140",,"144","136","Was there any diagnosis by a health professional of depression?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10141",,"145","137","Was there any diagnosis by a health professional of stroke?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10142",,"146","138","Was there any diagnosis by a health professional of sickle cell disease?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10143",,"147","139","Was there any diagnosis by a health professional of kidney disease?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10144",,"148","140","Was there any diagnosis by a health professional of liver disease?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"signs_symptoms_final_illness",,"149","141","General signs and symptoms associated with final illness",,"begin group",,,,,
+"id10147",,"150","142","Did (s)he have a fever?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10148_a","[no match found]","151","","How many days did the fever last?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10148_units","[no match found]","152","","How long did the fever last?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10148_b","[no match found]","153","","Enter how long the fever lasted in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10148_c","[no match found]","154","","Enter how long the fever lasted in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10148",,"155","143","How many days did the fever last?",,"calculate","INTEGER",,,,
+"id10149",,"156","144","Did the fever continue until death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10150",,"157","145","How severe was the fever?",,"select_one select_63",,"select_63","select_ONE SELECT_63","mild; moderate; severe; doesn't know; refused to answer","[empty cell]"
+"id10151",,"158","146","What was the pattern of the fever?",,"select_one select_64",,"select_64","select_ONE SELECT_64","continuous; on and off; only at night; doesn't know; refused to answer","[empty cell]"
+"id10152",,"159","147","Did (s)he have night sweats?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10153",,"160","148","Did (s)he have a cough?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10154_units","[no match found]","161","","For how long did (s)he have a cough?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10154_a","[no match found]","162","","Enter how long (s)he had a cough in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10154_b","[no match found]","163","","Enter how long (s)he had a cough in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10154",,"164","149","For how many days did (s)he have a cough?",,"calculate","INTEGER",,,,
+"id10155",,"165","150","Was the cough productive, with sputum?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10156",,"166","151","Was the cough very severe?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10157",,"167","152","Did (s)he cough up blood?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10158",,"168","153","Did (s)he make a whooping sound when coughing?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10159",,"169","154","Did (s)he have any difficulty breathing?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"breathdur",,"170","155","Duration of breathing difficulty",,"begin group",,,,,
+"id10161_0","[no match found]","171","","For how many days did the difficulty breathing last?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10161_unit","[no match found]","172","","For how long did the difficult breathing last?","[no match found]","select_one units","[no match found]","units","[no match found]","days; months; years; doesn't know; refused to answer","[no match found]"
+"id10161_1","[no match found]","173","","Enter how long the difficult breathing lasted in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10162",,"174","157","Enter how long the difficult breathing lasted in months:","FOR how MANY MONTHS DID the DIFFICULTY breathing LAST?","integer",,,,,
+"id10163",,"175","158","Enter how long the difficult breathing lasted in years:","FOR how MANY YEARS DID the DIFFICULTY breathing LAST?","integer",,,,,
+"id10161",,"176","156","Calculated number of Days with illness","FOR HOW MANY DAYS DID THE DIFFICULTY BREATHING LAST?","calculate","INTEGER",,,,
+"id10165",,"177","159","Was the difficulty continuous or on and off?",,"select_one select_80",,"select_80","select_ONE SELECT_80","continuous; on and off; doesn't know; refused to answer","[empty cell]"
+"id10166",,"178","160","During the illness that led to death, did (s)he have fast breathing?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10167_a","[no match found]","179","","For how many days did the fast breathing last?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10167_units","[no match found]","180","","How long did the fast breathing last?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10167_b","[no match found]","181","","Enter how long the fast breathing lasted in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10167_c","[no match found]","182","","Enter how long the fast breathing lasted in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10167",,"183","161","How long did the fast breathing last?","FOR HOW MANY DAYS did the fast breathing last?","calculate","INTEGER",,,,
+"id10168",,"184","162","Did (s)he have breathlessness?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10169_a","[no match found]","185","","For how many days did (s)he have breathlessness?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10169_units","[no match found]","186","","How long did (s)he have breathlessness?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10169_b","[no match found]","187","","Enter how long (s)he had breathlessness in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10169_c","[no match found]","188","","Enter how long (s)he had breathlessness in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10169",,"189","163","How long did (s)he have breathlessness?","FOR HOW MANY DAYS did (s)he have breathlessness?","calculate","INTEGER",,,,
+"id10170",,"190","164","Was (s)he unable to carry out daily routines due to breathlessness?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10171",,"191","165","Was (s)he breathless while lying flat?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10172",,"192","166","Did you see the lower chest wall/ribs being pulled in as the child breathed in?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10173_nc","[no match found]","193","","During the illness that led to death did his/her breathing sound like any of the following:","[no match found]","select_multiple select_501","[no match found]","select_501","[no match found]","stridor; grunting; wheezing; no; doesn't know; refused to answer","[no match found]"
+"id10173_check","[no match found]","194","","It is not possible to select 'Don't know' or 'refuse' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10173_a","[no match found]","195","","During the illness that led to death did (s)he have wheezing?","[no match found]","select_multiple select_502","[no match found]","select_502","[no match found]","wheezing; no; doesn't know; refused to answer","[no match found]"
+"id10173",,"196","167","During the illness that led to death did his/her breathing sound like any of the following:",,"calculate","SELECT_MULTIPLE SELECT_501",,,,
+"id10174",,"197","168","Did (s)he have chest pain?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10175",,"198","169","Was the chest pain severe?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10176",,"199","170","How many days before death did (s)he have chest pain?",,"integer",,,,,
+"paindur",,"200","171","Duration of the chest pain",,"begin group",,,,,
+"id10178_unit","[no match found]","201","","How long did the chest pain last?","[no match found]","select_one M_H_D_DK","[no match found]","m_h_d_dk","[no match found]","minutes; hours; days; doesn't know; refused to answer","[no match found]"
+"id10178",,"202","172","Enter how long the chest pain lasted in minutes:","HOW MANY MINUTES DID the pain LAST?","integer",,,,,
+"id10179",,"203","173","Enter how long the chest pain lasted in hours:","HOW MANY HOURS DID the pain LAST?","integer",,,,,
+"id10179_1","[no match found]","204","","Enter how long the chest pain lasted in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10181",,"205","174","Did (s)he have more frequent loose or liquid stools than usual?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10182_units","[no match found]","206","","How long did (s)he have frequent loose or liquid stools?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10182_a","[no match found]","207","","Enter how long (s)he had frequent loose or liquid stools in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10182_b","[no match found]","208","","Enter how long (s)he had frequent loose or liquid stools in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10182",,"209","175","For how many days did (s)he have frequent loose or liquid stools?",,"calculate","INTEGER",,,,
+"id10183",,"210","176","How many stools did the baby or child have on the day that loose liquid stools were most frequent?",,"integer",,,,,
+"id10184_a","[no match found]","211","","How many days before death did the frequent loose or liquid stools start?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10184_units","[no match found]","212","","How long before death did the frequent loose or liquid stools start?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10184_b","[no match found]","213","","Enter how long before death the frequent loose or liquid stools started in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10184_c","[no match found]","214","","Enter how long before death the frequent loose or liquid stools started in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10185",,"215","178","Did the frequent loose or liquid stools continue until death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10186",,"216","179","At any time during the final illness was there blood in the stools?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10187",,"217","180","Was there blood in the stool up until death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10188",,"218","181","Did (s)he vomit?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10189",,"219","182","To clarify: Did (s)he vomit in the week preceding the death?","did (s)he vomit in the week preceding the death?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10190_units","[no match found]","220","","How long before death did (s)he vomit?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10190_a","[no match found]","221","","Enter how long before death(s)he vomited in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10190_b","[no match found]","222","","Enter how long before death(s)he vomited in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10191",,"223","184","Was there blood in the vomit?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10192",,"224","185","Was the vomit black?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10193",,"225","186","Did (s)he have any belly (abdominal) problem?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10194",,"226","187","Did (s)he have belly (abdominal) pain?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10195",,"227","188","Was the belly (abdominal) pain severe?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"abdominal_pain",,"228","189","Belly pain",,"begin group",,,,,
+"id10196_unit","[no match found]","229","","For how long did (s)he have belly (abdominal) pain?","[no match found]","select_one H_D_M_DK","[no match found]","h_d_m_dk","[no match found]","hours; days; months; doesn't know; refused to answer","[no match found]"
+"id10196",,"230","191","Enter how long (s)he had  belly (abdominal) pain in hours:","HOURS","integer",,,,,
+"id10197_a","[no match found]","231","","Enter how long (s)he had  belly (abdominal) pain in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10198",,"232","194","Enter how long (s)he had  belly (abdominal) pain in months:","MONTHS","integer",,,,,
+"id10197",,"233","192","Calculated number of Days with belly pain","days","calculate","INTEGER",,,,
+"id10199",,"234","195","Was the pain in the upper or lower belly (abdomen)?",,"select_one select_100",,"select_100","select_ONE SELECT_100","upper abdomen; lower abdomen; upper and lower abdomen; doesn't know; refused to answer","[empty cell]"
+"id10200",,"235","196","Did (s)he have a more than usually protruding belly (abdomen)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10201_unit","[no match found]","236","","For how long before death did (s)he have a more than usually protruding belly (abdomen)?","[no match found]","select_one D_M_DK_REF","[no match found]","d_m_dk_ref","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10201_a","[no match found]","237","","Enter how long before death (s)he had a more than usually protruding belly (abdomen) in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10202",,"238","198","Enter how long before death (s)he had a more than usually protruding belly (abdomen) in months:","FOR how MANY MONTHS DID (s)he HAVE a more than usually protruding belly (ABDOMEN)?","integer",,,,,
+"id10201",,"239","197","Calculated number of Days with protruding belly (abdomen)","FOR HOW MANY DAYS DID (S)HE HAVE A MORE THAN USUALLY protruding belly (ABDOMEN)?","calculate","INTEGER",,,,
+"id10203",,"240","199","How rapidly did (s)he develop the protruding belly (abdomen)?",,"select_one select_103",,"select_103","select_ONE SELECT_103","rapidly; slowly; doesn't know; refused to answer","[empty cell]"
+"id10204",,"241","200","Did (s)he have any mass in the belly (abdomen)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10205_unit","[no match found]","242","","For how long did (s)he have a mass in the belly (abdomen)?","[no match found]","select_one D_M_DK_REF","[no match found]","d_m_dk_ref","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10205_a","[no match found]","243","","Enter how long (s)he had a mass in the belly (abdomen) in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10206",,"244","202","Enter how long (s)he had a mass in the belly (abdomen) in months:","FOR how MANY MONTHS BEFORE DEATH DID (s)he HAVE a mass in the belly (ABDOMEN)?","integer",,,,,
+"id10205",,"245","201","Calculated number of Days with a mass in the belly (abdomen)","FOR HOW MANY DAYS BEFORE DEATH DID (S)HE HAVE a mass in the belly (ABDOMEN)?","calculate","INTEGER",,,,
+"id10207",,"246","203","Did (s)he have a severe headache?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10208",,"247","204","Did (s)he have a stiff neck during illness that led to death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10209_units","[no match found]","248","","How long before death did (s)he have stiff neck?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10209_a","[no match found]","249","","Enter how long before death did (s)he have stiff neck in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10209_b","[no match found]","250","","Enter how long before death did (s)he have stiff neck in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10209",,"251","205","For how many days before death did (s)he have stiff neck?",,"calculate","INTEGER",,,,
+"id10210",,"252","206","Did (s)he have a painful neck during the illness that led to death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10211_units","[no match found]","253","","How long before death did (s)he have a painful neck?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10211_a","[no match found]","254","","Enter how long before death (s)he had a painful neck in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10211_b","[no match found]","255","","Enter how long before death (s)he had a painful neck in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10211",,"256","207","For how many days before death did (s)he have a painful neck?",,"calculate","INTEGER",,,,
+"id10212",,"257","208","Did (s)he have mental confusion?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10213_units","[no match found]","258","","How long did (s)he have mental confusion?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10213_a","[no match found]","259","","Enter how long (s)he had mental confusion in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10213_b","[no match found]","260","","Enter how long (s)he had mental confusion in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10213",,"261","209","For how many months did (s)he have mental confusion?",,"calculate","INTEGER",,,,
+"id10214",,"262","210","Was (s)he unconscious during the illness that led to death?","was (s)he unconscious during the illness THAT LEAD TO death?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10215",,"263","211","Was (s)he unconscious for more than 24 hours before death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10216_units","[no match found]","264","","How long before death did unconsciousness start?","[no match found]","select_one units_3","[no match found]","units_3","[no match found]","hours; days; doesn't know; refused to answer","[no match found]"
+"id10216_a","[no match found]","265","","Enter how long before death unconsciousness started in hours?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10216_b","[no match found]","266","","Enter how long before death unconsciousness started in days?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10216",,"267","212","How many hours before death did unconsciousness start?",,"calculate","INTEGER",,,,
+"id10217",,"268","213","Did the unconsciousness start suddenly, quickly (at least within a single day)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10218",,"269","214","Did the unconsciousness continue until death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10219",,"270","215","Did (s)he have convulsions?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10220",,"271","216","Did (s)he experience any generalized convulsions or fits during the illness that led to death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10221",,"272","217","For how many minutes did the convulsions last?",,"integer",,,,,
+"id10222",,"273","218","Did (s)he become unconscious immediately after the convulsion?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10223",,"274","219","Did (s)he have any urine problems?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10225",,"275","221","Did (s)he go to urinate more often than usual?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10226",,"276","222","During the final illness did (s)he ever pass blood in the urine?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10224",,"277","220","Did (s)he stop urinating?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10227",,"278","223","Did (s)he have sores or ulcers anywhere on the body?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10228",,"279","224","Did (s)he have sores?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10229",,"280","225","Did the sores have clear fluid or pus?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10230",,"281","226","Did (s)he have an ulcer (pit) on the foot?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10231",,"282","227","Did the ulcer on the foot ooze pus?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10232_units","[no match found]","283","","How long  did the ulcer on the foot ooze pus?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10232_a","[no match found]","284","","Enter how long the ulcer on the foot oozed pus in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10232_b","[no match found]","285","","Enter how long the ulcer on the foot oozed pus in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10232",,"286","228","For how many days did the ulcer on the foot ooze pus?",,"calculate","INTEGER",,,,
+"id10233",,"287","229","During the illness that led to death, did (s)he have any skin rash?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10234",,"288","230","For how many days did (s)he have the skin rash?",,"integer",,,,,
+"id10235",,"289","231","Where was the rash?",,"select_multiple select_135",,"select_135",,"face; trunk or abdomen; extremities; everywhere; doesn't know; refused to answer","face; trunk or abdomen; extremities; everywhere"
+"id10235_check","[no match found]","290","","It is not possible to select 'Doesn't Know' or 'Refused to answer' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10236",,"291","232","Did (s)he have measles rash (use local term)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10237",,"292","233","Did (s)he ever have shingles or herpes zoster?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10238",,"293","234","During the illness that led to death, did her/his skin flake off in patches?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10239",,"294","235","During the illness that led to death, did he/she have areas of the skin that turned black?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10240",,"295","236","During the illness that led to death, did he/she have areas of the skin with redness and swelling?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10241",,"296","237","During the illness that led to death, did (s)he bleed from anywhere?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10242",,"297","238","Did (s)he bleed from the nose, mouth or anus?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10243",,"298","239","Did (s)he have noticeable weight loss?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10244",,"299","240","Was (s)he severely thin or wasted?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10245",,"300","241","During the illness that led to death, did s/he have a whitish rash inside the mouth or on the tongue?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10246",,"301","242","Did (s)he have stiffness of the whole body or was unable to open the mouth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10247",,"302","243","Did (s)he have puffiness of the face?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10248_units","[no match found]","303","","How long did (s)he have puffiness of the face?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10248_a","[no match found]","304","","Enter how long (s)he had puffiness of the face in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10248_b","[no match found]","305","","Enter how long (s)he had puffiness of the face in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10248",,"306","244","For how many days did (s)he have puffiness of the face?",,"calculate","INTEGER",,,,
+"id10249",,"307","245","During the illness that led to death, did (s)he have swollen legs or feet?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10250_units","[no match found]","308","","How long did the swelling last?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10250_a","[no match found]","309","","Enter how long the swelling lasted in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10250_b","[no match found]","310","","Enter how long the swelling lasted in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10250",,"311","246","How many days did the swelling last?",,"calculate","INTEGER",,,,
+"id10251",,"312","247","Did (s)he have both feet swollen?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10252",,"313","248","Did (s)he have general puffiness all over his/her body?","did (s)he have general puffiness all over HI(S)HER body?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10253",,"314","249","Did (s)he have any lumps?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10254",,"315","250","Did (s)he have any lumps or lesions in the mouth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10255",,"316","251","Did (s)he have any lumps on the neck?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10256",,"317","252","Did (s)he have any lumps on the armpit?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10257",,"318","253","Did (s)he have any lumps on the groin?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10258",,"319","254","Was (s)he in any way paralysed?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10259",,"320","255","Did (s)he have paralysis of only one side of the body?","did S(HE have paralysis of only one side of the body?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10260",,"321","256","Which were the limbs or body parts paralysed?",,"select_multiple select_161",,"select_161",,"right side; left side; lower part of body; upper part of body; one leg only; one arm only; whole body; other; doesn't know; refused to answer","right side; left side; lower part of body; upper part of body; one leg only; one arm only; whole body; other"
+"id10260_check","[no match found]","322","","It is not possible to select 'only one side paralysed' and 'left and right side' or  'whole body' together. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10260_check2","[no match found]","323","","It is not possible to select 'Doesn't Know' or 'Refused to answer' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10261",,"324","257","Did (s)he have difficulty swallowing?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10262_units","[no match found]","325","","For how long before death did (s)he have difficulty swallowing?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10262_a","[no match found]","326","","Enter how long before death (s)he had difficulty swallowing in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10262_b","[no match found]","327","","Enter how long before death (s)he had difficulty swallowing in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10262",,"328","258","For how many days before death did (s)he have difficulty swallowing?",,"calculate","INTEGER",,,,
+"id10263",,"329","259","Was the difficulty with swallowing with solids, liquids, or both?",,"select_one select_164",,"select_164","select_ONE SELECT_164","solids; liquids; both; doesn't know; refused to answer","[empty cell]"
+"id10264",,"330","260","Did (s)he have pain upon swallowing?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10265",,"331","261","Did (s)he have yellow discoloration of the eyes?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10266_units","[no match found]","332","","For how long did (s)he have the yellow discoloration?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10266_a","[no match found]","333","","Enter how long (s)he had the yellow discoloration in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10266_b","[no match found]","334","","Enter how long (s)he had the yellow discoloration in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10266",,"335","262","For how many days did (s)he have the yellow discoloration?",,"calculate","INTEGER",,,,
+"id10267",,"336","263","Did her/his hair change in color to a reddish or yellowish color?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10268",,"337","264","Did (s)he look pale (thinning/lack of blood) or have pale palms, eyes or nail beds?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10269",,"338","265","Did (s)he have sunken eyes?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10270",,"339","266","Did (s)he drink a lot more water than usual?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10271",,"340","267","Was the baby able to suckle or bottle-feed within the first 24 hours after birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10272",,"341","268","Did the baby ever suckle in a normal way?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10273",,"342","269","Did the baby stop suckling?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10274_a","[no match found]","343","","How many days after birth did the baby stop suckling?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10274_units","[no match found]","344","","How long after birth did the baby stop suckling?","[no match found]","select_one units_2","[no match found]","units_2","[no match found]","days; months; doesn't know; refused to answer","[no match found]"
+"id10274_b","[no match found]","345","","Enter how long after birth  the baby stopped suckling in days:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10274_c","[no match found]","346","","Enter how long after birth  the baby stopped suckling in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10274",,"347","270","How many days after birth did the baby stop suckling?",,"calculate","INTEGER",,,,
+"id10275",,"348","271","Did the baby have convulsions starting within the first 24 hours of life?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10276",,"349","272","Did the baby have convulsions starting more than 24 hours after birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10277",,"350","273","Did the baby's body become stiff, with the back arched backwards?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10278",,"351","274","During the illness that led to death, did the baby have a bulging or raised fontanelle?","during the illness that led to death, did the baby have a bulging or raised fontanelle? (ASK ONLY UP to 18 MONTHS)","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10279",,"352","275","During the illness that led to death, did the baby have a sunken fontanelle?","during the illness that led to death, did the baby have a sunken fontanelle? (ASK ONLY UP to 18 MONTHS)","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10281",,"353","276","During the illness that led to death, did the baby become unresponsive or unconscious?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10282",,"354","277","Did the baby become unresponsive or unconscious soon after birth, within less than 24 hours?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10283",,"355","278","Did the baby become unresponsive or unconscious more than 24 hours after birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"neonatal_childc",,"356","279","Neonatal child questions part C",,"begin group",,,,,
+"id10284",,"357","280","During the illness that led to death, did the baby become cold to touch?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10285",,"358","281","How many days old was the baby when it started feeling cold to touch?",,"integer",,,,,
+"id10286",,"359","282","During the illness that led to death, did the baby become lethargic after a period of normal activity?","during the illness that led to death, did the baby become LETHARGIC, after a period of normal activity?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10287",,"360","283","Did the baby have redness or pus drainage from the umbilical cord stump?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10288",,"361","284","During the illness that led to death, did the baby have skin ulcer(s) or pits?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10289",,"362","285","During the illness that led to death, did the baby have yellow skin, palms (hand) or soles (foot)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10290",,"363","286","Did the baby or infant appear to be healthy and then just die suddenly?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"pregnancy_women",,"364","287","Signs and symptoms associated with pregnancy and women",,"begin group",,,,,
+"id10294",,"365","288","Did she have any swelling or lump in the breast?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10295",,"366","289","Did she have any ulcers (pits) in the breast?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10296",,"367","290","Did she ever have a period or menstruate?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10297",,"368","291","When she had her period, did she have vaginal bleeding in between menstrual periods?","DID she have  vaginal bleeding in between menstrual periods?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10298",,"369","292","Was the bleeding excessive?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10301",,"370","295","Was there excessive vaginal bleeding in the week prior to death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10299",,"371","293","Did her menstrual period stop naturally because of menopause or removal of uterus?","did her menstrual period stop naturally because of MENOPAUSE?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10302",,"372","296","At the time of death was her period overdue?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10303",,"373","297","For how many weeks had her period been overdue?",,"integer",,,,,
+"id10300",,"374","294","Did she have vaginal bleeding after cessation of menstruation?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10304",,"375","298","Did she have a sharp pain in her belly (abdomen) shortly before death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10305",,"376","299","Was she pregnant at the time of death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10306",,"377","300","Did she die within 6 weeks of delivery, abortion or miscarriage?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10307",,"378","301","Did this woman die more than 6 weeks after being pregnant or delivering a baby?","did this woman die more than 42 DAYS after being pregnant or delivering a baby?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10308",,"379","302","Was this a woman who died less than 1 year after being pregnant or delivering a baby?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10309",,"380","303","For how many months was she pregnant?",,"integer",,,,,
+"id10310",,"381","304","Please confirm, when she died, she was NEITHER pregnant NOR had delivered, had an abortion, or miscarried within 12 months of when she died--is that right?","please CONFIRM: WHEN she died, she was neither pregnant nor had RECENTLY BEEN pregnant nor had RECENTLY DELIVERED when she DIED - IS that right?","select_one YES_NO_DK_REF2","select_one YES_NO_DK_REF","yes_no_dk_ref2","SELECT_ONE YES_no_dk_REF"," yes (she was not pregnant; and she did not recently deliver, have abortion, or miscarry); no (she was pregnant or she recently delivered, had an abortion or miscarried); doesn't know; refused to answer","[empty cell]"
+"id10310_check","[no match found]","382","","If the response is NO, DON’T KNOW, OR REFUSED, it indicates some uncertainty as to whether the cause of death could have been a maternal or pregnancy-related cause. Go back to the question 'Did she ever have a period or menstruate?' and follow the process again. If it is confirmed that the death was related to pregnancy, proceed with the next question “Did she die during labour or delivery?”","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"group_maternal",,"383","305","Questions about possible maternal deaths",,"begin group",,,,,
+"id10312",,"384","306","Did she die during labour or delivery?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10313",,"385","307","Did she die after delivering a baby?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10314",,"386","308","Did she die within 24 hours after delivery?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10315_a","[no match found]","387","","Did she die within 6 weeks of childbirth?","[no match found]","select_one YES_NO_DK_REF","[no match found]","yes_no_dk_ref","[no match found]","yes; no; doesn't know; refused to answer","[no match found]"
+"id10315",,"388","309","Did she die within 6 weeks of childbirth?",,"calculate","SELECT_ONE YES_NO_DK_REF",,,,
+"id10316",,"389","310","Did she give birth to a live baby (within 6 weeks of her death)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10317",,"390","311","Did she die during or after a multiple pregnancy?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10318",,"391","312","Was she breastfeeding the child in the days before death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10319",,"392","313","How many births, including stillbirths, did she/the mother have before this baby?",,"integer",,,,,
+"id10320",,"393","314","Had she had any previous Caesarean section?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10321",,"394","315","During pregnancy, did she suffer from high blood pressure?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10322",,"395","316","Did she have foul smelling vaginal discharge during pregnancy or after delivery?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10323",,"396","317","During the last 3 months of pregnancy, did she suffer from convulsions?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10324",,"397","318","During the last 3 months of pregnancy did she suffer from blurred vision?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10325",,"398","319","Did bleeding occur while she was pregnant?","did bleeding occur while she was PREGNANT","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10326",,"399","320","Was there vaginal bleeding during the first 6 months of pregnancy?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10327",,"400","321","Was there vaginal bleeding during the last 3 months of pregnancy but before labour started?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10328",,"401","322","Did she have excessive bleeding during labour or delivery?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10329",,"402","323","Did she have excessive bleeding after delivery or abortion?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10330",,"403","324","Was the placenta completely delivered?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10331",,"404","325","Did she deliver or try to deliver an abnormally positioned baby?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10332",,"405","326","For how many hours was she in labour?",,"integer",,,,,
+"id10333",,"406","327","Did she attempt to terminate the pregnancy?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10334",,"407","328","Did she recently have a pregnancy that ended in an abortion (spontaneous or induced)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10335",,"408","329","Did she die during an abortion?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10336",,"409","330","Did she die within 6 weeks of having an abortion?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10337",,"410","331","Where did she give birth?",,"select_one select_208",,"select_208","select_ONE SELECT_208","hospital; other health facility; home; on route to hospital or facility; other; doesn't know; refused to answer","[empty cell]"
+"id10338",,"411","332","Did she receive professional assistance during the delivery?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10339",,"412","333","Who delivered the baby?",,"select_one select_530",,"select_530","select_ONE SELECT_530","doctor; midwife; nurse; relative; self (the mother); traditional birth attendant; other; doesn’t know; refused to answer","[empty cell]"
+"id10340",,"413","334","Did she have an operation to remove her uterus shortly before death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"deliverytype",,"414","335","How did the mother deliver her baby?",,"begin group",,,,,
+"id10342",,"415","336","Was the delivery normal vaginal, without forceps or vacuum?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10343",,"416","337","Was the delivery vaginal, with forceps or vacuum?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10344",,"417","338","Was the delivery a Caesarean section?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10347",,"418","339","Was the baby born more than one month early?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"neonatal_child",,"419","340","Neonatal and child history, signs and symptoms",,"begin group",,,,,
+"id10352_units","[no match found]","420","","How old was the child when the fatal illness started?","[no match found]","select_one units_4","[no match found]","units_4","[no match found]","months; years; doesn't know; refused to answer","[no match found]"
+"id10352_a","[no match found]","421","","Enter how old the child was  when the fatal illness started in months:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10352_b","[no match found]","422","","Enter how old the child was  when the fatal illness started in years:","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10352",,"423","341","How many years old was the child when the fatal illness started?",,"calculate","INTEGER",,,,
+"neonatal_childa",,"424","342","Neonatal child questions part A",,"begin group",,,,,
+"id10354",,"425","343","Was the child part of a multiple  birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10355",,"426","344","Was the child the first, second, or later in the birth order?",,"select_one select_219",,"select_219","select_ONE SELECT_219","first; second or later; doesn't know; refused to answer","[empty cell]"
+"id10356",,"427","345","Is the mother still alive?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10357",,"428","346","Did the mother die before, during or after the delivery?","did the mother die during or after the delivery?","select_one select_221",,"select_221","select_ONE SELECT_221","before delivery; during delivery; after delivery; doesn't know; refused to answer","[empty cell]"
+"moth_death",,"429","347","Time between delivery and death of mother",,"begin group",,,,,
+"id10358_units","[no match found]","430","","How long after the delivery did the mother die?","[no match found]","select_one units_5","[no match found]","units_5","[no match found]","days; weeks; months; doesn't know; refused to answer","[no match found]"
+"id10358",,"431","348","How many months after the delivery did the mother die?",,"integer",,,,,
+"id10359",,"432","349","How many days after the delivery did the mother die?",,"integer",,,,,
+"id10359_a","[no match found]","433","","How many weeks after the delivery did the mother die?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"id10360",,"434","350","Where was the deceased born?",,"select_one select_223",,"select_223","select_ONE SELECT_223","hospital; other health facility; home; on route to hospital or facility; other; doesn't know; refused to answer","[empty cell]"
+"id10361",,"435","351","Did you/the mother receive professional assistance during the delivery?","did the mother receive professional assistance during the delivery? (ASK ONLY UP TO 1 YEAR)","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10362",,"436","352","At birth, was the baby of usual size?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10363",,"437","353","At birth, was the baby smaller than usual, (weighing under 2.5 kg)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10364",,"438","354","At birth, was the baby very much smaller than usual, (weighing under 1 kg)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10365",,"439","355","At birth, was the baby larger than usual, (weighing over 4.5 kg)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id1036x_check","[no match found]","440","","It is not possible to select 'No usual size at Birth', 'No weighing under 2.5 kg' and 'No weighing over 4.5 kg' together. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10366",,"441","356","What was the weight (in grammes) of the deceased at birth?",,"integer",,,,,
+"id10367",,"442","357","How many months long was the pregnancy before the child was born?","how many months long was the pregnancy before the child was born? (ASK ONLY UP TO 1 YEAR)","integer",,,,,
+"id10368",,"443","358","Were there any complications in the late part of the pregnancy (defined as the last 3 months, before labour)?","were there any complications in the late part of the pregnancy (defined as the last 3 months, before labour)? (ASK ONLY UP TO 1 YEAR)","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10369",,"444","359","Were there any complications during labour or delivery?","were there any complications during labour or delivery? (ASK ONLY UP TO 1 YEAR)","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10370",,"445","360","Was any part of the baby physically abnormal at time of delivery? (for example: body part too large or too small, additional growth on body)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10371",,"446","361","Did the baby/ child have a swelling or defect on the back at time of birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10372",,"447","362","Did the baby/ child have a very large head at time of birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10373",,"448","363","Did the baby/ child have a very small head at time of birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10394",,"449","381","How many births, including stillbirths, did the baby's mother have before this baby?",,"integer",,,,,
+"neonatal_childb",,"450","364","Neonatal child questions part B",,"begin group",,,,,
+"id10376",,"451","365","Was the baby moving in the last few days before the birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10377",,"452","366","Did the baby stop moving in the womb before labour started?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"babmove",,"453","367","Baby moving",,"begin group",,,,,
+"id10379_unit","[no match found]","454","","How long before labour did you/the mother last feel the baby move?","[no match found]","select_one H_D_DK_REF","[no match found]","h_d_dk_ref","[no match found]","hours; days; doesn't know; refused to answer","[no match found]"
+"id10379",,"455","368","Enter how long before labour did you/the mother last felt the baby move in days: (maybe the respondent or health worker had examined the mother)","HOW MANY DAYS before labour did YOU or the mother last FEEL the baby MOVE? (maybe the respondent or health worker had examined the mother)","integer",,,,,
+"id10380",,"456","369","Enter how long before labour did you/the mother last felt the baby move in hours: (maybe the respondent or health worker had examined the mother)","HOW MANY HOURS before labour did YOU or the mother last FEEL the baby MOVE? (maybe the respondent or health worker had examined the mother)","integer",,,,,
+"id10382",,"457","370","How many hours did labour and delivery take?",,"integer",,,,,
+"id10383",,"458","371","Was the baby born 24 hours or more after the water broke?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10384",,"459","372","Was the liquor foul smelling?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10385",,"460","373","What was the colour of the liquor when the water broke?",,"select_one select_520",,"select_520","select_ONE SELECT_520","green or brown; clear (normal); other; doesn't know; refused to answer","[empty cell]"
+"mother_deliv",,"461","374","How was the baby delivered?",,"begin group",,,,,
+"id10387",,"462","375","Was the delivery normal vaginal, without forceps or vacuum?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10388",,"463","376","Was the delivery vaginal, with forceps or vacuum?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10389",,"464","377","Was the delivery a Caesarean section?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10389_check","[no match found]","465","","It is not possible to select 'No' to all three previous questions. Please go back and review the answers.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10391",,"466","378","Did you/the mother receive any vaccinations since reaching adulthood including during this pregnancy?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10392",,"467","379","How many doses?",,"integer",,,,,
+"id10393",,"468","380","Did you/the mother receive tetanus toxoid (TT) vaccine?","did THE mother receive tetanus toxoid (tt) vaccine?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10395",,"469","382","During labour, did the baby's mother suffer from fever?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10396",,"470","383","During the last 3 months of pregnancy, labour or delivery, did you/the baby's mother suffer from high blood pressure?","during the last 3 months of pregnancy, labour or delivery, did the baby's mother suffer from high blood pressure?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10397",,"471","384","Did you/the baby's mother have diabetes mellitus?","did THE baby's mother have diabetes mellitus?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10398",,"472","385","Did you/the baby's mother have foul smelling vaginal discharge during pregnancy or after delivery?","did THE baby's mother have foul smelling vaginal discharge during pregnancy or after delivery?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10399",,"473","386","During the last 3 months of pregnancy, labour or delivery, did you/the baby's mother suffer from convulsions?","during the last 3 months of pregnancy, labour or delivery, did the baby's mother suffer from convulsions?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10400",,"474","387","During the last 3 months of pregnancy did you/the baby's mother suffer from blurred vision?","during the last 3 months of pregnancy did the baby's mother suffer from blurred vision?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10401",,"475","388","Did you/the baby's mother have severe anemia?","did THE baby's mother have severe anemia?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10402",,"476","389","Did you/the baby's mother have vaginal bleeding during the last 3 months of pregnancy but before labour started?","did the baby's mother have vaginal bleeding during the last 3 months of pregnancy but before labour started?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10403",,"477","390","Did the baby's bottom, feet, arm or hand come out of the vagina before its head?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10404",,"478","391","Was the umbilical cord wrapped more than once around the neck of the child at birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10405",,"479","392","Was the umbilical cord delivered first?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10406",,"480","393","Was the baby blue in colour at birth?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"risk_factors",,"481","394","Risk factors",,"begin group",,,,,
+"id10411",,"482","395","Did (s)he drink alcohol?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10412",,"483","396","Did (s)he use tobacco?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10413",,"484","397","Did (s)he smoke tobacco (cigarette, cigar, pipe, etc.)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10414",,"485","398","What kind of tobacco did (s)he use ?",,"select_one select_306",,"select_306","select_ONE SELECT_306","cigarettes; pipe; chewing tobacco; local form of tobacco; other","[empty cell]"
+"id10414_check","[no match found]","486","","It is not possible to select cigarettes or pipe and 'no' to 'Did (s)he smoke tobacco?'. Please go back and correct the selections.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10415",,"487","399","How many cigarettes did (s)he smoke daily?",,"integer",,,,,
+"id10416","[no match found]","488","","How many times did (s)he use tobacco products each day?","[no match found]","integer","[no match found]",,"[no match found]",,"[no match found]"
+"health_service_utilization",,"489","400","Health service utilisation",,"begin group",,,,,
+"id10418",,"490","401","Did (s)he receive any treatment for the illness that led to death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10419",,"491","402","Did (s)he receive oral rehydration salts?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10420",,"492","403","Did (s)he receive (or need) intravenous fluids (drip) treatment?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10421",,"493","404","Did (s)he receive (or need) a blood transfusion?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10422",,"494","405","Did (s)he receive (or need) treatment/food through a tube passed through the nose?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10423",,"495","406","Did (s)he receive (or need) injectable antibiotics?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10424",,"496","407","Did (s)he receive (or need) antiretroviral therapy (ART)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10425",,"497","408","Did (s)he have (or need) an operation for the illness?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10426",,"498","409","Did (s)he have the operation within 1 month before death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10427",,"499","410","Was (s)he discharged from hospital very ill?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10428",,"500","411","Did (s)he receive any immunizations?","HAD (s)he RECEIVED IMMUNIZATION?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10429",,"501","412","Do you have the child's vaccination card?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10430",,"502","413","Can I see the vaccination card (note the vaccines the child received)?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10431",,"503","414","Select EPI vaccines done","NOTE vaccines HERE","select_multiple select_vaccines","TEXT","select_vaccines","TEXT","bcg; dpt 1,2,3; hep b; hib; meningitis; penta 1,2,3; pneumo; polio 1,2,3; rota; no vaccines; doesn’t know; refused to answer","[empty cell]"
+"id10431_check","[no match found]","504","","It is not possible to select 'No vaccines', 'Don't know' or 'refuse' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10432",,"505","415","Was care sought outside the home while (s)he had this illness?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10433",,"506","416","Where or from whom did you seek care?",,"select_multiple select_322","SELECT_ONE select_322","select_322","select_ONE SELECT_322","traditional healer; homeopath; religious leader; government hospital; government health center or clinic; private hospital; community-based practitioner associated with health system; trained birth attendant; private physician; relative, friend (outside household); pharmacy; doesn't know; refused to answer","[empty cell]"
+"id10433_check","[no match found]","507","","It is not possible to select 'Don't know' or 'refuse' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10434",,"508","417","What was the name and address of any hospital, health center or clinic where care was sought","RECORD the name and address of any hospital, health center or clinic where care was sought","text",,,,,
+"id10435",,"509","418","Did a health care worker tell you the cause of death?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10436",,"510","419","What did the health care worker say?",,"text",,,,,
+"id10437",,"511","420","Do you have any health records that belonged to the deceased?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10438",,"512","421","Can I see the health records?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10439_check","[no match found]","513","","Is the date of the most recent (last) visit available?","[no match found]","select_one YES_NO","[no match found]","yes_no","[no match found]","yes; no","[no match found]"
+"id10439",,"514","422","Record the date of the most recent (last) visit",,"date",,,,,
+"id10440_check","[no match found]","515","","Is the date of the second most recent visit available?","[no match found]","select_one YES_NO","[no match found]","yes_no","[no match found]","yes; no","[no match found]"
+"id10440",,"516","423","Record the date of the second most recent visit","record the date of the LAST BUT ONE (SECOND LAST) visit","date",,,,,
+"id10441_check","[no match found]","517","","Is the date of the last note on the health records available?","[no match found]","select_one YES_NO","[no match found]","yes_no","[no match found]","yes; no","[no match found]"
+"id10441",,"518","424","Record the date of the last note on the health records",,"date",,,,,
+"id10442",,"519","425","Record the weight (in kilogrammes) written at the most recent (last) visit",,"decimal",,,,,
+"id10443",,"520","426","Record the weight (in kilogrammes) written at the second most recent visit","record the weight (in kilogrammes) written at the LAST BUT ONE (SECOND LAST) visit","decimal",,,,,
+"id10444",,"521","427","Transcribe the last note on the health records",,"text",,,,,
+"id10445",,"522","428","Has the deceased’s (biological) mother ever been tested for HIV?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10446",,"523","429","Has the deceased’s (biological) mother ever been told she had HIV/AIDS by a health worker?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"back_context",,"524","430","Background and context",,"begin group",,,,,
+"id10450",,"525","431","In the final days before death, did s/he travel to a hospital or health facility?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10451",,"526","432","Did (s)he use motorised transport to get to the hospital or health facility?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10452",,"527","433","Were there any problems during admission to the hospital or health facility?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10453",,"528","434","Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10454",,"529","435","Were there any problems getting medications or diagnostic tests in the hospital or health facility?","were there any problems getting MEDICATIONS, or diagnostic tests in the hospital or health facility?","select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10455",,"530","436","Does it take more than 2 hours to get to the nearest hospital or health facility from the deceased's household?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10456",,"531","437","In the final days before death, were there any doubts about whether medical care was needed?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10457",,"532","438","In the final days before death, was traditional medicine used?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10458",,"533","439","In the final days before death, did anyone use a telephone or cell phone to call for help?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10459",,"534","440","Over the course of illness, did the total costs of care and treatment prohibit other household payments?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"deathcert",,"535","441","Death certificate with cause of death",,"begin group",,,,,
+"id10462",,"536","442","Was a death certificate issued?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10463",,"537","443","Can I see the death certificate?",,"select_one YES_NO_DK_REF",,"yes_no_dk_ref","SELECT_ONE YES_no_dk_ref","yes; no; doesn't know; refused to answer","[empty cell]"
+"id10464",,"538","444","Record the immediate cause of death from the certificate (line 1a)",,"text",,,,,
+"id10465",,"539","445","Duration (Ia):",,"text",,,,,
+"id10466",,"540","446","Record the first antecedent cause of death from the certificate  (line 1b)",,"text",,,,,
+"id10467",,"541","447","Duration (Ib):",,"text",,,,,
+"id10468",,"542","448","Record the second antecedent cause of death from the certificate (line 1c)",,"text",,,,,
+"id10469",,"543","449","Duration (Ic):",,"text",,,,,
+"id10470",,"544","450","Record the third antecedent cause of death from the certificate (line 1d)",,"text",,,,,
+"id10471",,"545","451","Duration (Id):",,"text",,,,,
+"id10472",,"546","452","Record the contributing cause(s) of death from the certificate (part 2)",,"text",,,,,
+"id10473",,"547","453","Duration (part2):",,"text",,,,,
+"narrat",,"548","454","Open narrative",,"begin group",,,,,
+"id10476",,"549","455","Thank you for your information. Now can you please tell me in your own words about the events that led to the death?","NARRATIVE DESCRIPTION","text",,,,,
+"id10477",,"550","456","Select any of the following words that were mentioned as present in the narrative.","ARE THERE any of the following words of INTEREST mentioned in the ABOVE NARRATIVE?","select_multiple select_510",,"select_510",,"chronic kidney disease; dialysis; fever; heart attack; heart problem; jaundice; liver failure; malaria; pneumonia; renal (kidney) failure; suicide; none of the above words were mentioned; don't know",
+"id10478",,"551","457","Select any of the following words that were mentioned as present in the narrative.","ARE THERE any of the following words of INTEREST mentioned in the ABOVE NARRATIVE?","select_multiple select_511",,"select_511",,"abdomen; cancer; dehydration; dengue fever; diarrhoea; fever; heart problems; jaundice (yellow skin or eyes); pneumonia; rash; none of the above words were mentioned; don't know",
+"id10479",,"552","458","Select any of the following words that were mentioned as present in the narrative.","ARE THERE any of the following words of INTEREST mentioned in the ABOVE NARRATIVE?","select_multiple select_512",,"select_512",,"asphyxia; incubator; lung problem; pneumonia; preterm delivery; respiratory distress; none of the above words were mentioned; don't know",
+"id10477_check","[no match found]","553","","It is not possible to select 'Don't know' or 'None of the above' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10478_check","[no match found]","554","","It is not possible to select 'Don't know' or 'None of the above' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10479_check","[no match found]","555","","It is not possible to select 'Don't know' or 'None of the above' together with other options. Please go back and correct the selection.","[no match found]","note","[no match found]",,"[no match found]",,"[no match found]"
+"id10481",,"556","459","[empty cell]","TIME AT END OF INTERVIEW","end","TIME",,,,
+"comment","[no match found]","557","","Comment","[no match found]","text","[no match found]",,"[no match found]",,"[no match found]"
+"Not included in 2016v1_5","age_neonate_hours","","301","","Enter neonate's age in hours:","","integer","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","age_neonate_minutes","","312","","Enter neonate's age in minutes:","","integer","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","Id10056","","412","","What was her/his place of normal residence 1 to 5 years before death?","","text","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","illdurnote","","19","","For how long was (s)he ill before death?","","note","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","Id10184","","87","","How many days before death did the frequent loose or liquid stools start?","","integer","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","Id10190","","94","","For how many days before death did (s)he vomit?","","integer","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","a_pain_how_long","","102","","For how long before death did (s)he have belly (abdominal) pain?","","note","","[empty cell]","","[empty cell]"
+"Not included in 2016v1_5","Id10197b","","105","","Weeks","","integer","","[empty cell]","","[empty cell]"
